@@ -14,7 +14,7 @@ const Student=()=>{
                 <button onClick={()=>Navi('/newStudent')} className="studentAddBtn">Add New Student</button>
             </div>
             
-            <div>
+            <div >
             <div className="grid__container grid__border">
                 <div className="grid__item">Name</div>
                 <div className="grid__item">Age</div>
@@ -26,15 +26,15 @@ const Student=()=>{
                 {
                     contextData.stuname.map((e,index)=>{
                         return(
-                            <div key={index}>
-                            <div  className="grid__container">
+                           
+                            <div key={index} className="grid__container">
                             <div   className="grid__item">{e.Name}</div>
                             <div  className="grid__item">{e.Age}</div>
                             <div  className="grid__item">{e.Course}</div>
                             <div  className="grid__item">{e.Batch}</div>
                             <div  className="grid__item"><NavLink state={{data : index}} to={"/editStudent"}>Edit</NavLink></div>
                             </div>
-                            </div>
+                            
                         )
                     })
                 }
