@@ -38,18 +38,31 @@ const EditStudent=()=>{
                 <form  >            
                     
                     <div className="form">
-                        
+                    <div className='display '>
+                
                     <input type="text"  name="Name" placeholder={ContextData.stuname[indexValue].Name} onChange={handleChange} autoComplete="off"/>
+                <span className='span2'>Name</span>
+                </div>
     
+                <div className='display '>
                 
                     <input type="number"  name="Age" placeholder={ContextData.stuname[indexValue].Age}  onChange={handleChange} autoComplete="off"/>
+                <span className='span2'>Age</span>
+                </div>
                     </div>
     
                     <div className="form">
-                    <input type="text" name="Course" placeholder={ContextData.stuname[indexValue].Course} onChange={handleChange} autoComplete="off" />
+                    <div className='display '>
                 
+                    <input type="text" name="Course" placeholder={ContextData.stuname[indexValue].Course} onChange={handleChange} autoComplete="off" />
+                <span className='span2'>Course</span>
+                </div>
+                
+                <div className='display '>
                 
                     <input type="text"  name="Batch" placeholder={ContextData.stuname[indexValue].Batch} onChange={handleChange} autoComplete="off" />
+                <span className='span2'>Batch</span>
+                </div>
                     </div>
     
                     <div className="buttons">

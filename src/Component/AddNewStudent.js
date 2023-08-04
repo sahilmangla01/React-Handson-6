@@ -30,17 +30,30 @@ const AddNewStudent=()=>{
             <form  >            
                 
                 <div className="form">
-                <input type="text"  name="Name" placeholder="Name" onChange={handleChange} autoComplete="off"/>
+
+                 <div className='display '>
+                <input type="text"  name="Name"  onChange={handleChange} autoComplete="off"/>
+                <span className='span1'>Name</span>
+                </div>
             
    
-                <input type="number"  name="Age" placeholder="Age"  onChange={handleChange} autoComplete="off"/>
+                <div className='display '>
+                <input type="text"  name="Age"  onChange={handleChange} autoComplete="off"/>
+                <span className='span1'>Age</span>
+                </div>
                 </div>
 
                 <div className="form">
                    
-                <input type="text" name="Course" placeholder="Course" onChange={handleChange} autoComplete="off" />
+                <div className='display '>
+                <input type="text"  name="Course"  onChange={handleChange} autoComplete="off"/>
+                <span className='span1'>Course</span>
+                </div>
 
-                <input type="text"  name="Batch" placeholder="Batch" onChange={handleChange} autoComplete="off" />
+                <div className='display '>
+                <input type="text"  name="Batch"  onChange={handleChange} autoComplete="off"/>
+                <span className='span1'>Batch</span>
+                </div>
                 </div>
 
                 <div className="buttons">
