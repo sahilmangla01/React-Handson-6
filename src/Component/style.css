@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato&display=swap');
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    background-color: #071952;
+    height: 70px;
+    color: white;
+    font-size: 40px ;
+    box-sizing: border-box;
+    padding-top:5px ;
+    font-family: 'Courgette', cursive;
+}
+
+.link:hover{
+    color: #FF52A2;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+@media only screen and (min-width:350px) and (max-width:550px){
+    .links{
+        font-size: 30px;
+        padding-top: 15px;
+    }
+}
+@media only screen and (min-width:700px) and (max-width:920px){
+    .links{
+        font-size: 40px;
+        padding: 25px 0px;
+        height: 100px;
+    }
+}

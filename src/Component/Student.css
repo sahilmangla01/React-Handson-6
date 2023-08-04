@@ -1,0 +1,111 @@
+.student__main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 92vw;
+   
+    
+}
+.student__main>div{
+    margin-top: 25px;
+}
+
+.studentHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.studentText{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.studentAddBtn{
+    font-size: 20px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    
+}
+
+.grid__container{
+    display: grid;
+    grid-template-columns: 30vw 15vw 20vw 20vw 10vw;
+    background-color: aliceblue;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 1px solid lightgrey;
+    
+
+}
+.grid__border{
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+}
+.grid__container:last-child{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.grid__item{
+    box-sizing: border-box;
+    padding: 20px 15px;
+}
+
+@media only screen and (min-width:350px) and (max-width:550px){
+    .student__main{
+        margin-left: 20px;
+        width: 92vw;
+        
+    }
+    
+    .studentText{
+    
+        font-size: 30px;
+        
+    }
+    .studentAddBtn{
+        font-size: 15px;
+        width: 200px;
+        
+    }
+    .grid__container{
+        grid-template-columns: 23vw 13vw 18vw 18vw 12vw;
+        font-size: 12px;
+        border-radius: 5px 5px 0px 0px;
+        border-bottom: 1px solid lightgrey;
+        
+    
+    }
+    .grid__item{
+        padding: 15px 5px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:920px){
+    .student__main{
+        margin-left: 30px;
+        width: 92vw;
+       
+    }
+    .student__main>div{
+        margin-top: 50px;
+    }
+    
+    
+    .grid__container{
+        grid-template-columns: 23vw 13vw 18vw 18vw 12vw;
+        font-size: 27px;
+        border-radius: 5px 5px 0px 0px;
+        border-bottom: 1px solid lightgrey;
+        
+    
+    }
+    .grid__item{
+        padding: 25px 5px;
+    }
+}
+
